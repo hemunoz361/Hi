@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>The Pet Zone</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="top-nav-bar">
+            <a href="index.html"><img id="logo" src="https://th.bing.com/th/id/OIG.flEz2quZggiRIkubP52K?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="the pet zone logo" class="logo"></a>
+            <div class="search-box">
+                <input type="text" class="form-control" id="input-box">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <div id="result-box">
+                </div>
+            </div>
+
+            <script src="autocomplete.js"></script>
+
+            <div class="menu-bar">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+        <section class="header">
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        Browse Categories
+                    </li>
+                    <li>
+                        Cats<i class="fa fa-angle-right"></i>
+                        <ul>
+                            <a href="Cat Food.html"><li>Food</li></a>
+                            <a href="Cat Toy.html"><li>Toys</li></a>
+                            <a href="Litter Box.html"><li>Supplies</li></a>
+                        </ul>
+                    </li>
+                    <li>
+                        Dogs<i class="fa fa-angle-right"></i>
+                        <ul>
+                            <a href="Dog Food.html"><li>Food</li></a>
+                            <a href="Dog Toy.html"><li>Toys</li></a>
+                </ul>
+
+            </div>
+            <div class="slider">
+                <div id="slider" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://wallup.net/wp-content/uploads/2018/10/06/708179-kittens-kitten-cat-cats-baby-cute-s.jpg" class="d-block w-100" alt="kittens">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://mypetguru.com/imgs/uploads/different-dog-food-types.jpg" class="d-block w-100" alt="dog food">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://thepettown.com/wp-content/uploads/2020/10/2020-10-06_140817.jpg" class="d-block w-100" alt="lizard">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://northernvirginiamag.com/wp-content/uploads/2020/10/pet-supplies.jpg" class="d-block w-100" alt="assorted supplies">
+                      </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+        </section>
+
+        <!-----------------featured categories---------------->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="title-box">
+                    <h2>Holiday</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="Reptile Santa Hat.html"><img src="https://media.istockphoto.com/photos/bearded-dragon-wearing-santa-hat-picture-id469195655?k=20&m=469195655&s=170667a&w=0&h=bdoNyRM3rtizPy4CorKc5WFwo2Dgc394pHOL24-prCY=" alt="lizard hat"></a>
+                        <div class="product-bottom text-center">
+                            <h3>Reptile Santa Hat</h3>
+                            <h5>$5.00</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Holly Leash.html"><img src="https://petsupplydiscounts.com/wp-content/uploads/2020/09/91zcT4DuEqL._AC_SL1500_.jpg" alt="christmas leash"></a>
+                        <div class="product-bottom text-center">
+                            <h3>Holly Leash</h3>
+                            <h5>$20.00</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Christmas Dog Bed.html"><img src="https://www.pet-bliss.ie/wp-content/uploads/2020/11/Yuki-Christmas-Dog-Bed.jpg" alt="christmas dog bed"></a>
+                        <div class="product-bottom text-center">
+                            <h3>Christmas Dog Bed</h3>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------------On Sale products---------------->
+        <section class="on-sale">
+            <div class="container">
+                <div class="title-box">
+                    <h2>On Sale</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <a href="Dog Kennel.html"><img src="https://nichedatafactory.com/wp-content/uploads/2016/12/dog-crates.jpg" alt="dog crate"></a>
+                                <div class="product-bottom text-center">
+                                    <h3>Dog Kennel</h3>
+                                    <h5>$50.00</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <a href="Bird Backpack.html"><img src="https://ae01.alicdn.com/kf/H31d236b1968442d8931e96ce2703b277w/Pet-Parrot-Backpack-Carrying-Cage-300D-Outdoor-Travel-Breathable-Bird-Carrier-Canary-Transport-Bag-Birds-Supplies.jpg" alt="bird backpack"></a>
+                            <div class="product-bottom text-center">
+                                    <h3>Bird Backpack</h3>
+                                    <h5>$10.00</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <a href="Scratching Post.html"><img src="https://www.catster.com/wp-content/uploads/2015/06/scratching_post.jpg" alt="scratching post"></a>
+                            <div class="product-bottom text-center">
+                                    <h3>Scratching Post</h3>
+                                    <h5>$10.00</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <a href="Heat Lamp.html"><img src="https://i5.walmartimages.com/asr/364c969c-65c8-4c1b-b33a-f345816b54dc.a84361e194b5dee2b3606589e113b815.jpeg" alt="heat lamp"></a>
+                                <div class="product-bottom text-center">
+                                    <h3>Heat Lamp</h3>
+                                    <h5>$40.00</h5>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+</html>

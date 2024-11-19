@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>The Pet Zone</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+        <script src="purchase.js" async></script>
+    </head>
+    <body>
+        <div class="top-nav-bar">
+            <a href="index.html"><img id="logo" src="https://th.bing.com/th/id/OIG.flEz2quZggiRIkubP52K?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="the pet zone logo" class="logo"></a>
+            <div class="search-box">
+                <input type="text" class="form-control" id="input-box">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <div id="result-box">
+                </div>
+            </div>
+
+            <script src="autocomplete.js"></script>
+
+            <div class="menu-bar">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+       <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="https://i5.walmartimages.com/asr/364c969c-65c8-4c1b-b33a-f345816b54dc.a84361e194b5dee2b3606589e113b815.jpeg" alt="heat lamp">
+                </div>
+                <div class="col-md-7">
+                    <h6 class="sale text center"> On Sale</h6>
+                    <h2>Heat Lamp</h2>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                    <h4 class="price">$40.00</h4>
+                    <input id="productQuantity" type="number" value="1">
+                    <button class="btn btn-primary shop-item-button" type="button">Purchase</button>
+                </div>
+               </section>
+            </div>
+        </div>
+    </body>

@@ -1,0 +1,320 @@
+body {
+  background-color: #f1f3f4;
+  font-family: sans-serif;
+}
+
+.top-nav-bar {
+  height: 170px;
+  top: 0;
+  position: sticky;
+  background: #fff;
+  margin-bottom: 20px;
+  border-bottom: 5px solid purple;
+  color:purple;
+  z-index: 30;
+}
+.logo
+{
+  height: 150px;
+  margin: 10px 10px;
+}
+
+.form-control{
+  margin-top: 9px;
+  margin-left: 30px;
+  border: 1px solid purple !important;
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.input-group-text{
+  background: purple !important;
+  border: 1px solid purple !important;
+  margin: 9px 60px 0 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+}
+
+.search-box
+{
+  display: inline-flex;
+  width: 60%;
+  height: 40%;
+}
+
+.fa-magnifying-glass
+{
+  color: #fff
+}
+
+#result-box {
+  position: absolute;
+  top: 66%;
+  left: 19%;
+  width: 47%;
+  background-color: white;
+  border: 1px solid purple;
+  max-height: 300px;
+  overflow-y: scroll;
+  display: block;
+}
+
+#result-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#result-box li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#result-box li:hover {
+  background-color: #f0f0f0;
+}
+
+#result-box li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.menu-bar{
+  width: 40%;
+  float: right;
+  margin-top: -35px;
+}
+
+.menu-bar ul{
+  float: right;
+  display: inline-flex;
+}
+
+.menu-bar ul li {
+  border-left: 10px solid #fff;
+  list-style-type: none;
+  text-align: center;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 980px){
+  .menu-bar ul {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .menu-bar ul li {
+    margin: 5px 0;
+  }
+
+  .menu-bar ul li a {
+    padding: 8px 15px;
+  }
+}
+
+/*----------------------------------Side-menu---------------------*/
+.side-menu{
+  height: 75%;
+  width: 14%;
+  font-size: 14px;
+  float: left;
+  z-index: 2;
+  background-color: #b075da
+}
+.side-menu ul{
+  margin-left: -20px;
+}
+.side-menu ul li{
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.side-menu ul li:not(:first-child):hover {
+  color: purple;
+}
+.side-menu ul li ul{
+  display: none;
+  z-index: 10;
+  margin-top: -32px;
+}
+.side-menu ul li:hover ul{
+  display: block;
+  height: 400px;
+  margin-left: 13%;
+  padding: 0 100px 10px 10px;
+  position: fixed;
+  background: #eed3ff;
+  box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.5);
+}
+.fa-angle-right{
+  margin-top: 4px;
+  margin-right: 8px;
+  float: right;
+}
+
+@media only screen and (max-width: 980px){
+  .side-menu{
+    width: 27%;
+    z-index: 20;
+    top: 190px;
+    position: fixed;
+    font-size: 14px;
+  }
+  .side-menu ul li ul{
+    top: 222px;
+  }
+  .side-menu ul li:hover ul{
+    margin-left: 24%;
+  }
+}
+/*------------------------------------slider CSS------------------------*/
+.slider{
+  width: 80%;
+  margin-left: 16%;
+  padding: 0 10px;
+}
+.carousel{
+  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+  z-index: 1;
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/*------------------------------------featured-categories CSS------------------------*/
+
+.featured-categories{
+  margin: 50px 0;
+}
+
+.featured-categories img{
+  width: 100%;
+  padding: 20px 0;
+  transition: 1s;
+  cursor:pointer;
+}
+
+.featured-categories img:hover{
+  transform: scale(1.1);
+}
+
+
+/*------------------------------------On Sale products CSS------------------------*/
+
+.title-box{
+  background: purple;
+  color: #fff;
+  width: 160px;
+  padding: 3px 10px;
+  height: 35px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.title-box h2{
+  font-size: 24px;
+}
+
+.title-box::after{
+  content: '';
+  border-top: 35px solid purple;
+  border-right: 50px solid transparent;
+  position: absolute;
+  display: flex;
+  margin-top: -3px;
+  margin-left: 150px;
+}
+
+.on-sale img{
+  width: 100%;
+  padding: 20px 0;
+  transition: 1s;
+  cursor:pointer;
+}
+
+.on-sale img:hover{
+  transform: scale(1.1);
+}
+
+/*------------------------------------Product-bottom CSS------------------------*/
+.product-bottom .fa{
+  color: purple;
+  font-size: 10px;
+}
+.product-bottom h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-bottom h5{
+  font-size:15px;
+  padding-bottom: 10px;
+}
+
+/*------------------------------------single product CSS------------------------*/
+.single-product{
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.single-product img {
+  width: 100%;
+  height: auto;
+}
+
+.sale{
+  background: green;
+  width: 45px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.single-product .fa{
+  color:purple;
+}
+
+.single-product .shop-item-price{
+  color: purple;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.single-product input{
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  text-align: center;
+  width: 40px;
+}
+
+.single-product .btn-primary{
+  background: #eed3ff;
+  color: purple;
+  font-size: 15px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+
+}
